@@ -57,9 +57,23 @@
   /*ABOUT ME */
   .aboutMe__section {
     margin: 80px auto;
-    & img {
-      display: none;
-    }
+  }
+  .aboutMe__section img {
+    display: none;
+  }
+
+  /*SKILLS */
+  .skills__grid_item:nth-child(1) {
+    display: none;
+  }
+  .skills__grid_item:nth-child(4) {
+    display: none;
+  }
+  .skills__grid_item:nth-child(2) {
+    grid-column: span 3;
+  }
+  .skills__grid_item:nth-child(3) {
+    grid-column: span 3;
   }
 }
 
@@ -92,5 +106,14 @@
   }
   .aboutMe__container {
     padding: 1rem;
+  }
+
+  /*SKILLS */
+  .softSkills__badge {
+    width: auto;
+    padding: 10px;
+  }
+  .softSkills__badge img {
+    display: none;
   }
 }
