@@ -15,16 +15,6 @@
   .container {
     max-width: 1280px;
   }
-}
-
-/* *================================
-    Tablet and small laptop
-=================================== */
-
-@media (max-width: 1280px) {
-  .container {
-    max-width: 1024px;
-  }
   /* Header */
   .header__container {
     flex-direction: column;
@@ -43,6 +33,16 @@
   .header__column--right {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+/* *================================
+    Tablet and small laptop
+=================================== */
+
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
   }
 }
 
@@ -74,6 +74,26 @@
   }
   .skills__grid_item:nth-child(3) {
     grid-column: span 3;
+  }
+  .footer__container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer__column {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  .footer__copyright {
+    text-align: center;
+    margin-top: 0;
+  }
+  .footer__socials {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  .footer__socials a img {
+    margin-right: 0.5rem;
   }
 }
 

@@ -24,6 +24,9 @@
   border-radius: 3rem;
   padding: 3rem 0;
 }
+.aboutMe__content_container p {
+  font-size: var(--p-font-size);
+}
 .aboutMe__content_container h1 {
   color: var(--p-600);
 }
@@ -74,15 +77,17 @@
 }
 .aboutMe__section img {
   position: absolute;
-  width: 300px;
+  width: 250px;
   height: auto;
 }
 .aboutMe__section img:nth-child(1) {
-  top: -20%;
-  left: 1%;
+  top: -15%;
+  left: 3%;
   z-index: -10;
+  animation: float 6s ease-in-out infinite;
 }
 .aboutMe__section img:nth-child(2) {
   bottom: -20%;
-  right: 0;
+  right: 5%;
+  animation: float 7s 1s ease-in-out infinite;
 }

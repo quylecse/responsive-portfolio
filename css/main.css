@@ -4,6 +4,7 @@
 @import "sections/header.css";
 @import "sections/projects.css";
 @import "sections/skills.css";
+@import "sections/animations.css";
 @import "responsive.css";
 
 * {
@@ -41,10 +42,17 @@
 }
 .section__description {
   text-align: center;
-  max-width: 65ch;
+  max-width: 100ch;
   color: var(--n-500);
 }
+body {
+  background-color: var(--foreground-color);
 
+  background-image: radial-gradient(var(--p-50) 2px, transparent 0.8px),
+    radial-gradient(var(--p-100) 2px, var(--foreground-color) 0.5px);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+}
 a {
   text-decoration: none;
 }

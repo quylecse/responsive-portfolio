@@ -90,6 +90,13 @@
   color: transparent;
   background-clip: text;
 }
+
+.skills__grid_item:nth-child(2) .icons-list-wrapper:nth-of-type(1) .icons-list {
+  animation: move-left 60s linear infinite;
+}
+.skills__grid_item:nth-child(2) .icons-list-wrapper:nth-of-type(2) .icons-list {
+  animation: move-right 30s linear infinite;
+}
 /*======================================================================*/
 
 /* ******************************
@@ -153,17 +160,6 @@
   animation-delay: -7.5s;
 }
 
-@keyframes drift {
-  0% {
-    transform: translate(0px, 0px) rotate(0deg);
-  }
-  25% {
-    transform: translate(5px, -10px) rotate(1deg);
-  }
-  75% {
-    transform: translate(-5px, 10px) rotate(-1deg);
-  }
-}
 .softSkills__badge p {
   position: relative;
   background: var(--main-gradient-color);

@@ -22,7 +22,7 @@
     <!-- ************************************************** 
                         Header
      ************************************************** -->
-    <header>
+    <header id="home">
       <div class="container header__container">
         <!-- left column -->
         <div class="header__column--left">
@@ -30,7 +30,7 @@
           <div class="header__content--left">
             <h2 class="header__title">quyleCSE</h2>
             <div class="header__badge_container">
-              <div class="badge">Web- und Mobile-Entwicklung</div>
+              <!-- <div class="badge">Web- und Mobile-Entwicklung</div> -->
               <div class="badge">Fullstack - Entwickler</div>
             </div>
             <p>
@@ -61,7 +61,7 @@
     <!-- ************************************************** 
                         About me
      ************************************************** -->
-    <section class="aboutMe__section">
+    <section id="about-me" class="aboutMe__section">
       <!-- Side Animation -->
       <img src="assets/rocket-icon.svg" alt="rocket icon" />
       <img src="assets/laptop-icon.svg" alt="laptop icon" />
@@ -80,16 +80,14 @@
           </p>
           <div class="CTA">
             <a
-              href="assets/CV_Resume.pdf"
+              href="assets/quyle_lebenslauf.pdf"
               target="_blank"
               rel="noopener noreferer"
               class="primaryButton"
               download
               >CV herunterladen</a
             >
-            <a href="#ProjectContainer" class="outlineButton" download
-              >Zu den Projekten</a
-            >
+            <a href="#projects" class="outlineButton">Zu den Projekten</a>
           </div>
         </div>
       </div>
@@ -98,7 +96,7 @@
     <!-- ************************************************** 
                         Skills
      ************************************************** -->
-    <section class="skills_section">
+    <section id="skills" class="skills_section">
       <div class="container skills__container">
         <!-- header -->
         <div class="section__header">
@@ -132,7 +130,7 @@
             <!-- skill logos -->
             <div>
               <!-- list 1 -->
-              <div class="icons-list-wrapper">
+              <div class="icons-list-wrapper" data-direction="left">
                 <div class="icons-list">
                   <div class="icon-badges">
                     <img src="assets/icons/C.svg" alt="C icon" />
@@ -172,15 +170,12 @@
                   </div>
                   <div class="icon-badges">
                     <img src="assets/icons/JS.svg" alt="JS icon" />
-                    <span>JS</span>
+                    <span>JavaScript</span>
                   </div>
                   <div class="icon-badges">
                     <img src="assets/icons/react.svg" alt="react icon" />
                     <span>react</span>
                   </div>
-                </div>
-
-                <div class="icons-list">
                   <div class="icon-badges">
                     <img src="assets/icons/C.svg" alt="C icon" />
                     <span>C</span>
@@ -201,7 +196,6 @@
                     <img src="assets/icons/html.svg" alt="html icon" />
                     <span>html</span>
                   </div>
-
                   <div class="icon-badges">
                     <img src="assets/icons/nextjs.svg" alt="nextjs icon" />
                     <span>nextjs</span>
@@ -219,7 +213,7 @@
                   </div>
                   <div class="icon-badges">
                     <img src="assets/icons/JS.svg" alt="JS icon" />
-                    <span>JS</span>
+                    <span>JavaScript</span>
                   </div>
                   <div class="icon-badges">
                     <img src="assets/icons/react.svg" alt="react icon" />
@@ -228,7 +222,7 @@
                 </div>
               </div>
               <!-- list 2 -->
-              <div class="icons-list-wrapper">
+              <div class="icons-list-wrapper" data-direction="right">
                 <div class="icons-list">
                   <div class="icon-badges">
                     <img src="assets/icons/C.svg" alt="C icon" />
@@ -268,15 +262,12 @@
                   </div>
                   <div class="icon-badges">
                     <img src="assets/icons/JS.svg" alt="JS icon" />
-                    <span>JS</span>
+                    <span>JavaScript</span>
                   </div>
                   <div class="icon-badges">
                     <img src="assets/icons/react.svg" alt="react icon" />
                     <span>react</span>
                   </div>
-                </div>
-
-                <div class="icons-list">
                   <div class="icon-badges">
                     <img src="assets/icons/C.svg" alt="C icon" />
                     <span>C</span>
@@ -297,7 +288,6 @@
                     <img src="assets/icons/html.svg" alt="html icon" />
                     <span>html</span>
                   </div>
-
                   <div class="icon-badges">
                     <img src="assets/icons/nextjs.svg" alt="nextjs icon" />
                     <span>nextjs</span>
@@ -315,7 +305,7 @@
                   </div>
                   <div class="icon-badges">
                     <img src="assets/icons/JS.svg" alt="JS icon" />
-                    <span>JS</span>
+                    <span>JavaScript</span>
                   </div>
                   <div class="icon-badges">
                     <img src="assets/icons/react.svg" alt="react icon" />
@@ -388,7 +378,7 @@
     <!-- ************************************************** 
                         Projects
      ************************************************** -->
-    <section class="projects__section">
+    <section id="projects" class="projects__section">
       <div class="container projects__container">
         <!-- header -->
         <div class="section__header">
@@ -465,7 +455,7 @@
             <div class="projects__cards">
               <div class="projects__cards_wrapper">
                 <img
-                  src="assets/project3.jpg"
+                  src="assets/cg3-sonnensystem.jpg"
                   alt="Computergrafik"
                   class="projects_cards_img"
                 />
@@ -499,8 +489,8 @@
             <div class="projects__cards">
               <div class="projects__cards_wrapper">
                 <img
-                  src="assets/project1.jpg"
-                  alt="Todo App Projekt"
+                  src="assets/schiffeversenken.jpg"
+                  alt="Desktop Game – Schiffeversenken"
                   class="projects_cards_img"
                 />
               </div>
@@ -513,5 +503,60 @@
         </div>
       </div>
     </section>
+    <footer>
+      <div class="container footer__container">
+        <div class="footer__column footer__navigation">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-me">Über mich</a></li>
+            <li><a href="#skills">Kompetenzen</a></li>
+            <li><a href="#projects">Projekte</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__column footer__contact">
+          <h4>Kontakt</h4>
+          <p>
+            E-Mail: <a href="mailto:lequycse@gmail.com">lequycse@gmail.com</a>
+          </p>
+          <p>Telefon: <a href="tel:+4917672617490">017672617490</a></p>
+          <div class="footer__socials">
+            <a
+              href="https://github.com/quylecse"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub Profil"
+              ><img src="assets/icons/github.svg" alt="GitHub icon"
+            /></a>
+            <a
+              href="https://www.facebook.com/Kenpachi93/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook Profil"
+              ><img src="assets/icons/facebook.svg" alt="Facebook icon"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/quylecse/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn Profil"
+              ><img src="assets/icons/linkedin.svg" alt="LinkedIn icon"
+            /></a>
+            <a
+              href="https://www.instagram.com/lequy.leonis/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram Profil"
+              ><img src="assets/icons/instagram.svg" alt="Instagram icon"
+            /></a>
+          </div>
+        </div>
+
+        <div class="footer__column footer__copyright">
+          <small>&copy; 2025 quyleCSE. Alle Rechte vorbehalten.</small>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
